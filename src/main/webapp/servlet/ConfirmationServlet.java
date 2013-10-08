@@ -15,7 +15,7 @@ import javax.ws.rs.core.MediaType;
 import main.webapp.util.Constants;
 
 @SuppressWarnings("serial")
-@WebServlet(urlPatterns = {"/confirmationservlet"})
+@WebServlet(urlPatterns = { "/confirmationservlet" })
 public class ConfirmationServlet extends HttpServlet {
 
 	@Override

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.core.MediaType;
 
 @SuppressWarnings("serial")
-@WebServlet(urlPatterns = {"/redirectionservlet"})
+@WebServlet(urlPatterns = { "/redirectionservlet" })
 public class ResponseRedirectionServlet extends HttpServlet {
 
 	private static final String SEARCH_ENGINE_PARAM_NAME = "searchEngine";

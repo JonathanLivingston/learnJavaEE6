@@ -15,7 +15,7 @@ import javax.ws.rs.core.MediaType;
 import main.webapp.util.Constants;
 
 @SuppressWarnings("serial")
-@WebServlet(urlPatterns = {"/multiplevaluefieldhandlerservlet"})
+@WebServlet(urlPatterns = { "/multiplevaluefieldhandlerservlet" })
 public class MultipleValueFieldHandlerServlet extends HttpServlet {
 
 	private static final String OPTIONS_PARAM_NAME = "options";

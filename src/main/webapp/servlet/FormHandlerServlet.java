@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 import main.webapp.util.Constants;
 
 @SuppressWarnings("serial")
-@WebServlet(urlPatterns = {"/formhandlerservlet"})
+@WebServlet(urlPatterns = { "/formhandlerservlet" })
 public class FormHandlerServlet extends HttpServlet {
 
 	private static final String ENTERED_VALUE_PARAM_NAME = "enteredValue";
