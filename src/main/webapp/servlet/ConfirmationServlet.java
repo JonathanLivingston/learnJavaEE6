@@ -3,6 +3,7 @@ package main.webapp.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,26 +14,30 @@ import javax.ws.rs.core.MediaType;
 import main.webapp.util.Constants;
 
 @SuppressWarnings("serial")
-public class FormHandlerServlet extends HttpServlet {
-
-	private static final String ENTERED_VALUE_PARAM_NAME = "enteredValue";
+public class ConfirmationServlet extends HttpServlet {
 
 	@Override
+	@SuppressWarnings("unchecked")
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		String enteredValue = new String(
-				request.getParameter(ENTERED_VALUE_PARAM_NAME).getBytes(
-						StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
 		response.setContentType(MediaType.TEXT_HTML);
 		response.setCharacterEncoding(StandardCharsets.UTF_8.name());
 		try (PrintWriter writer = response.getWriter()) {
-			writer.println(Constants.HTML_TAG_P_OPEN);
-			writer.println("Вы ввели: ");
-			writer.println(enteredValue);
+			List<String> checkedLabels = (List<String>) request
+					.getAttribute(Constants.CHECKED_LABELS_PARAM_NAME);
+
+			if (checkedLabels == null) {
+				writer.println("Не было выбрано ни одной опции");
+			} else {
+				writer.println("Были выбраны следующие опции: ");
+				for (String checkedLabel : checkedLabels) {
+					writer.println(Constants.HTML_TAG_BR);
+					writer.println(checkedLabel);
+				}
+			}
 			writer.println(Constants.HTML_TAG_P_CLOSE);
 		} catch (IOException ioException) {
 			ioException.printStackTrace();
 		}
 	}
-
 }

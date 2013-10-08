@@ -10,17 +10,26 @@
 		<servlet-name>MultipleValueFieldHandlerServlet</servlet-name>
 		<servlet-class>main.webapp.servlet.MultipleValueFieldHandlerServlet</servlet-class>
 	</servlet>
-	
+	<servlet>
+		<servlet-name>ConfirmationServlet</servlet-name>
+		<servlet-class>main.webapp.servlet.ConfirmationServlet</servlet-class>
+	</servlet>
+
 	<servlet-mapping>
 		<servlet-name>FormHandlerServlet</servlet-name>
 		<url-pattern>/formhandlerservlet</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet-mapping>
 		<servlet-name>MultipleValueFieldHandlerServlet</servlet-name>
 		<url-pattern>/multiplevaluefieldhandlerservlet</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet-mapping>
+		<servlet-name>ConfirmationServlet</servlet-name>
+		<url-pattern>/confirmationservlet</url-pattern>
+	</servlet-mapping>
+
 	<welcome-file-list>
 		<welcome-file>dataentry.html</welcome-file>
 	</welcome-file-list>
