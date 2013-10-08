@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,6 +14,7 @@ import javax.ws.rs.core.MediaType;
 import main.webapp.util.Constants;
 
 @SuppressWarnings("serial")
+@WebServlet(urlPatterns = {"/formhandlerservlet"})
 public class FormHandlerServlet extends HttpServlet {
 
 	private static final String ENTERED_VALUE_PARAM_NAME = "enteredValue";

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +15,7 @@ import javax.ws.rs.core.MediaType;
 import main.webapp.util.Constants;
 
 @SuppressWarnings("serial")
+@WebServlet(urlPatterns = {"/multiplevaluefieldhandlerservlet"})
 public class MultipleValueFieldHandlerServlet extends HttpServlet {
 
 	private static final String OPTIONS_PARAM_NAME = "options";
