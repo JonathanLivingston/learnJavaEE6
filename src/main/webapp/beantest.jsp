@@ -3,6 +3,7 @@
 <jsp:useBean id="customer" class="main.webapp.bean.CustomerBean"
 	scope="page"></jsp:useBean>
 <jsp:setProperty name="customer" property="*" />
+<%! String pageName="Свойства JavaBean"; %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,6 +13,9 @@
 <body>
 	<form>
 		<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<%@ include file="navigation.jspf"%>
+			</tr>
 			<tr>
 				<td align="right">Имя:&nbsp;</td>
 				<td><input type="text" name="firstName"

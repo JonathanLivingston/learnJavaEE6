@@ -3,21 +3,4 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-	<servlet>
-		<servlet-name>ImplicitObjectJsp</servlet-name>
-		<jsp-file>implicitobjects.jsp</jsp-file>
-		<init-param>
-			<param-name>Some XML setted param</param-name>
-			<param-value>some value</param-value>
-		</init-param>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>ImplicitObjectJsp</servlet-name>
-		<url-pattern>/implicitobjects</url-pattern>
-	</servlet-mapping>
-
-	<welcome-file-list>
-		<welcome-file>dataentry.html</welcome-file>
-	</welcome-file-list>
 </web-app>
