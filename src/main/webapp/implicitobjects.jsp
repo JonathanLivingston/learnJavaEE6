@@ -15,7 +15,7 @@
 			<%@ include file="navigation.jspf"%>
 		</tr>
 		<tr>
-			<p>Some very interesting content</p>
+			<р>Some very interesting content</p>
 			<p>
 				<%
 					application.setAttribute("applicationAttribute",
