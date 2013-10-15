@@ -8,6 +8,7 @@
 	<li/> <a href="implicitobjects.jsp">Test of using implicit objects on JSP</a>
 	<li/> <a href="implicitobjects2.jsp">Test of using implicit objects on JSP. Part2</a>
 	<li/> <a href="severalvalues.jsp">Page with checkboxes</a>
-	<li/> <a href="tagtest.jsp">Sample of simple custom tag using</a>
+	<li/> <a href="tagtest.jsp">Sample of simple custom tag defined at Java class</a>
+	<li/> <a href="/webapp/tagtest2">Sample of simple custom tag defined at *.tag file</a>
 </ul>
 <h3>Current page: <%= pageName %></h3>
