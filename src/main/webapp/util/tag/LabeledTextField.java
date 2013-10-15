@@ -8,7 +8,7 @@ import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import static main.webapp.util.Constants.*;
 
-public class LabeldTextField extends SimpleTagSupport {
+public class LabeledTextField extends SimpleTagSupport {
 
 	private String label;
 	private String value = "";
