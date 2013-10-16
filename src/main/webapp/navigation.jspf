@@ -12,5 +12,6 @@
 	<li/> <a href="tagtest.jsp">Sample of simple custom tag defined at Java class</a>
 	<li/> <a href="/webapp/tagtest2">Sample of simple custom tag defined at *.tag file</a>
 	<li/> <a href="/webapp/contexttest">Different contexts</a>
+	<li/> <a href="jstlcore.jsp">JSTL Core Tags</a>
 </ul>
 <h3>Current page: <%= pageName %></h3>
