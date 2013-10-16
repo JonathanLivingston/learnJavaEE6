@@ -5,6 +5,11 @@ public class CustomerBean {
 	public CustomerBean() {
 	}
 
+	public CustomerBean(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	private String firstName;
 	private String lastName;
 
@@ -22,6 +27,11 @@ public class CustomerBean {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	@Override
+	public String toString() {
+		return this.firstName + " " + this.lastName;
 	}
 
 }

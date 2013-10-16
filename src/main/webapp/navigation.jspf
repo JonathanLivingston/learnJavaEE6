@@ -1,5 +1,6 @@
 <b>ApplicationMenu</b>
 <ul>
+	<li/> <a href="index.jsp">Start page</a>
 	<li/> <a href="beantest.jsp">Work with Java Bean from JSP</a>
 	<li/> <a href="buggs.jsp">Some page, containing bug</a>
 	<li/> <a href="choosesearchengine.jsp">Redirection test</a>
@@ -10,5 +11,6 @@
 	<li/> <a href="severalvalues.jsp">Page with checkboxes</a>
 	<li/> <a href="tagtest.jsp">Sample of simple custom tag defined at Java class</a>
 	<li/> <a href="/webapp/tagtest2">Sample of simple custom tag defined at *.tag file</a>
+	<li/> <a href="/webapp/contexttest">Different contexts</a>
 </ul>
 <h3>Current page: <%= pageName %></h3>
