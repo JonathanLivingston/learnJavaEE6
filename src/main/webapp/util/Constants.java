@@ -15,5 +15,7 @@ public final class Constants {
 	public static final String HTML_TAG_B_OPEN = "<b>";
 	public static final String HTML_TAG_B_CLOSE = "</b>";
 	public static final String HTML_TAG_BR = "<br/>";
+	
+	public static final String DB_RESOURCE_LINK = "jdbc/__CustomerDBPool";
 
 }
